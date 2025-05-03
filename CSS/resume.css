@@ -1,0 +1,192 @@
+section#hero-landing {
+  margin: 4rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  button {
+    background-color: var(--color-primary);
+    color: var(--text-color-light);
+    border-radius: var(--border-radius-md);
+    border: 2px solid var(--color-primary);
+  }
+}
+
+section#hero-second {
+  width: var(--tablet-width);
+  margin: 4rem 0 0 0;
+
+  .card {
+    padding: 1rem;
+    background-color: var(--color-primary-light);
+    border-radius: var(--border-radius-md);
+
+    h1 {
+      font-weight: var(--font-weight-medium);
+    }
+    div {
+      padding: 0 0 0 1.6rem;
+
+      border-left: 2px solid var(--color-primary);
+    }
+  }
+}
+
+section#hero-third {
+  width: var(--tablet-width);
+  margin: 4rem 0 0 0;
+  .skill-html {
+    border: 2px solid var(--color-primary-light);
+    margin: 1rem 0 0 0;
+    border-radius: var(--border-radius-sm);
+    padding: 1.66rem;
+
+    .bar-contaienr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+    }
+    .loader {
+      background-color: var(--color-primary-light);
+      width: 100%;
+      height: 0.5rem;
+      border-radius: var(--border-radius-full);
+      overflow: hidden;
+    }
+    .bar {
+      background-color: var(--color-primary);
+      width: 90%;
+      height: inherit;
+    }
+
+    h3 {
+      font-weight: var(--font-weight-medium);
+      padding: 0 0 1rem 0;
+    }
+    p {
+      margin-left: 96%;
+    }
+  }
+
+  .skill-css {
+    border: 2px solid var(--color-primary-light);
+    margin: 1rem 0 0 0;
+    border-radius: var(--border-radius-sm);
+    padding: 1.66rem;
+
+    .bar-contaienr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+    }
+    .loader {
+      background-color: var(--color-primary-light);
+      width: 100%;
+      height: 0.5rem;
+      border-radius: var(--border-radius-full);
+      overflow: hidden;
+    }
+    .bar {
+      background-color: var(--color-primary);
+      width: 80%;
+      height: inherit;
+    }
+
+    h3 {
+      font-weight: var(--font-weight-medium);
+      padding: 0 0 1rem 0;
+    }
+    p {
+      margin-left: 96%;
+    }
+  }
+
+  .skill-js {
+    border: 2px solid var(--color-primary-light);
+    margin: 1rem 0 0 0;
+    border-radius: var(--border-radius-sm);
+    padding: 1.66rem;
+
+    .bar-contaienr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+    }
+    .loader {
+      background-color: var(--color-primary-light);
+      width: 100%;
+      height: 0.5rem;
+      border-radius: var(--border-radius-full);
+      overflow: hidden;
+    }
+    .bar {
+      background-color: var(--color-primary);
+      width: 50%;
+      height: inherit;
+    }
+
+    h3 {
+      font-weight: var(--font-weight-medium);
+      padding: 0 0 1rem 0;
+    }
+    p {
+      margin-left: 96%;
+    }
+  }
+
+  .skills {
+    border: 2px solid var(--color-primary-light);
+    margin: 1rem 0 0 0;
+    border-radius: var(--border-radius-sm);
+    padding: 1.66rem;
+    div {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 1rem 0 0 0;
+      gap: 1rem;
+    }
+  }
+
+  .skill {
+    background-color: var(--color-primary-light);
+    padding: 0.5rem;
+    border-radius: var(--border-radius-md);
+
+    &:hover {
+      background-color: var(--color-primary-lighter);
+    }
+  }
+}
+
+section#hero-four {
+  width: var(--tablet-width);
+  background-color: var(--color-primary-light);
+  border-radius: var(--border-radius-md);
+  margin: 4rem 0 0 0;
+  padding: 1.66rem;
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    user-select: none;
+
+    .card-child {
+      border: 2px solid var(--color-primary);
+      border-radius: var(--border-radius-md);
+      padding: 1rem;
+      transition: var(--transition-colors);
+    }
+
+    i {
+      font-size: var(--font-size-lg);
+    }
+    h4 {
+      font-weight: var(--font-weight-medium);
+    }
+  }
+}

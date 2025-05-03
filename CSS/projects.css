@@ -1,0 +1,52 @@
+main {
+  margin: 4rem 0 0 0;
+}
+
+section#hero-landing {
+  margin: 5rem 0 0 0;
+
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.66rem;
+
+    .card {
+      border: 2px solid var(--color-primary-lighter);
+      border-radius: 1rem 1rem 0.5rem 0.5rem;
+      
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition-shadow);
+      box-shadow: var(--shadow-md);
+
+      &:hover{
+            box-shadow: var(--shadow-xl);
+      }
+
+      .image {
+        background-color: var(--color-primary-lighter);
+        overflow: hidden;
+        width: inherit;
+        height: 15rem;
+        border-radius: 1rem 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .description {
+        padding: 1rem;
+        .technology {
+          margin: 0.5rem 0 0.5rem 0;
+        }
+        .tech {
+          background-color: var(--color-primary-light);
+          font-size: 0.8rem;
+          padding: 0.5rem;
+          border-radius: var(--border-radius-xl);
+        }
+      }
+    }
+  }
+}

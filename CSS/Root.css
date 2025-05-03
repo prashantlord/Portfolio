@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-primary-lighter: #edf8ed;
+  --color-primary-light: #d1fae5;
+  --color-primary: #059669;
+
+  --text-color: #1f2937;
+  --text-color-p: #3f3f3f;
+  --text-color-light: #fff;
+  --text-color-color: var(--color-primary);
+
+  --font-family: "Poppins", sans-serif;
+
+  --color-background: #fff;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem; /* 12px - Very small text */
+  --font-size-sm: 0.875rem; /* 14px - Small text */
+  --font-size-base: 1rem; /* 16px - Base text size */
+  --font-size-md: 1.125rem; /* 18px - Medium text */
+  --font-size-lg: 1.25rem; /* 20px - Large text */
+  --font-size-xl: 1.5rem; /* 24px - Extra large text */
+  --font-size-2xl: 1.875rem; /* 30px - 2X large text */
+  --font-size-3xl: 2.25rem; /* 36px - 3X large text */
+  --font-size-4xl: 3rem; /* 48px - 4X large text */
+  --font-size-5xl: 3.75rem; /* 60px - 5X large text */
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.2; /* Headings */
+  --line-height-snug: 1.4; /* Buttons, tight paragraphs */
+  --line-height-normal: 1.6; /* Body text */
+  --line-height-relaxed: 1.8; /* Relaxed body text */
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em; /* Headings */
+  --letter-spacing-normal: 0; /* Normal text */
+  --letter-spacing-wide: 0.025em; /* Buttons, emphasized text */
+
+  /* Component Specific Spacing */
+  --spacing-section-y: 4rem; /* Vertical padding for sections */
+  --spacing-card-padding: 1.5rem; /* Padding inside cards */
+  --spacing-button-x: 1.5rem; /* Horizontal padding for buttons */
+  --spacing-button-y: 0.75rem; /* Vertical padding for buttons */
+
+  /* ==========================================================================
+        BORDERS & SHADOWS
+        ========================================================================== */
+
+  /* Border Radius */
+  --border-radius-sm: 0.25rem; /* 4px */
+  --border-radius-md: 0.5rem; /* 8px */
+  --border-radius-lg: 0.75rem; /* 12px */
+  --border-radius-xl: 1rem; /* 16px */
+  --border-radius-full: 9999px; /* Fully rounded (circles) */
+
+  /* Border Widths */
+  --border-width-thin: 1px;
+  --border-width-normal: 2px;
+  --border-width-thick: 3px;
+
+  /* Box Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* ==========================================================================
+        TRANSITIONS & ANIMATIONS
+        ========================================================================== */
+
+  /* Transition Durations */
+  --transition-duration-fast: 150ms;
+  --transition-duration-normal: 300ms;
+  --transition-duration-slow: 500ms;
+
+  /* Transition Timing Functions */
+  --transition-timing-default: ease;
+  --transition-timing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-timing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Common Transitions */
+  --transition-all: all var(--transition-duration-normal)
+    var(--transition-timing-default);
+  --transition-colors: background-color var(--transition-duration-normal)
+      var(--transition-timing-default),
+    border-color var(--transition-duration-normal)
+      var(--transition-timing-default),
+    color var(--transition-duration-normal) var(--transition-timing-default);
+  --transition-transform: transform var(--transition-duration-normal)
+    var(--transition-timing-default);
+  --transition-opacity: opacity var(--transition-duration-normal)
+    var(--transition-timing-default);
+
+  --transition-shadow: box-shadow 300ms;
+  /* ==========================================================================
+        LAYOUT & CONTAINER
+        ========================================================================== */
+
+  /* Container Widths */
+  --container-max-width: 1200px;
+  --container-padding-x: 1rem; /* Padding on small screens */
+  --container-padding-x-md: 2rem; /* Padding on medium screens */
+
+  /* Z-Index Layers */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+
+  /* ==========================================================================
+        COMPONENT SPECIFIC
+        ========================================================================== */
+
+  /* Buttons */
+  --button-height-sm: 2rem; /* 32px */
+  --button-height-md: 2.5rem; /* 40px */
+  --button-height-lg: 3rem; /* 48px */
+
+  /* Forms */
+  --input-height: 2.5rem; /* 40px */
+  --input-border-color: var(--color-border);
+  --input-focus-ring-color: var(--color-primary-light);
+
+  /* Cards */
+  --card-border-radius: var(--border-radius-md);
+  --card-shadow: var(--shadow-md);
+  --card-hover-shadow: var(--shadow-lg);
+
+  /* Navigation */
+  --nav-height: 4rem; /* 64px */
+  --nav-shadow: var(--shadow-sm);
+
+  --desktop-width: 1400px;
+  --tablet-width: 1200px;
+  --small-tablet-width: 800px;
+  --smaller-tablet-width: 680px;
+  --mobile-width: 320px;
+}
