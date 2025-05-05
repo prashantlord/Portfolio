@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   /* outline: 1px solid orange; */
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 
   list-style-type: none;
   text-decoration: none;
@@ -49,7 +49,7 @@ button {
   font-size: var(--font-size-sm);
 
   &:hover {
-   box-shadow: var(--shadow-xl)
+    box-shadow: var(--shadow-xl);
   }
 }
 
@@ -59,7 +59,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2.3rem 0 2.3rem;
+  /* padding: 0 2.3rem 0 2.3rem; */
+  /* padding: 0 1rem; */
 
   nav {
     width: var(--desktop-width);
@@ -79,6 +80,9 @@ header {
     }
   }
 }
+.none {
+  display: none;
+}
 
 footer {
   height: var(--nav-height);
@@ -87,7 +91,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2.3rem 0 2.3rem;
+  /* padding: 0 2.3rem 0 2.3rem; */
   user-select: none;
 
   .foot {
@@ -112,5 +116,115 @@ main {
 
   section {
     width: var(--desktop-width);
+  }
+}
+
+@media screen and (width <= 1500px) {
+  header nav {
+    width: var(--tablet-width);
+  }
+
+  main section {
+    width: var(--tablet-width);
+  }
+
+  footer .foot {
+    width: var(--tablet-width);
+  }
+}
+
+@media screen and (width <= 1200px) {
+  header nav {
+    width: 1000px;
+  }
+
+  main section {
+    width: 1000px;
+  }
+
+  footer .foot {
+    width: 1000px;
+  }
+
+  main section#hero-second .cards {
+    gap: 1rem;
+  }
+
+  main section#hero-second .cards-container {
+    display: flex;
+    width: 1000px;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  header nav {
+    width: 800px;
+  }
+
+  main section {
+    width: 800px;
+  }
+
+  footer .foot {
+    width: 800px;
+  }
+
+  main section#hero-landing {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main section#hero-landing .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+
+  main section#hero-second .cards-container {
+    display: flex;
+    width: 800px;
+  }
+}
+
+@media screen and (width <= 800px) {
+  header nav li {
+    display: none;
+  }
+  header nav i {
+    display: block !important;
+    font-size: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  header {
+    margin: 0 1rem;
+  }
+
+  body main section {
+    padding: 0 1rem;
+  }
+
+  main section {
+    width: 500px;
+    padding: 1rem;
+  }
+
+  main section#hero-second .cards,
+  main section#hero-second .cards-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  footer .foot {
+    padding: 0 1rem;
   }
 }

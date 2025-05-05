@@ -50,3 +50,48 @@ section#hero-landing {
     }
   }
 }
+
+
+
+
+@media screen and (width <= 1200px) {
+  main section#hero-second .cards {
+    gap: 1rem;
+  }
+
+  main section#hero-second .cards-container {
+    display: flex;
+    width: 1000px;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  main section#hero-landing {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main section#hero-landing .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+
+  main section#hero-second .cards-container {
+    display: flex;
+    width: 800px;
+  }
+}
+
+@media screen and (width <= 800px) {
+main section#hero-landing .cards {
+    display: flex;
+    flex-direction: column;
+}
+}

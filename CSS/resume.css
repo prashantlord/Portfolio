@@ -8,10 +8,13 @@ section#hero-landing {
     border-radius: var(--border-radius-md);
     border: 2px solid var(--color-primary);
   }
+  h1,
+  p {
+    text-align: center;
+  }
 }
 
 section#hero-second {
-  width: var(--tablet-width);
   margin: 4rem 0 0 0;
 
   .card {
@@ -31,7 +34,7 @@ section#hero-second {
 }
 
 section#hero-third {
-  width: var(--tablet-width);
+  width: 50%;
   margin: 4rem 0 0 0;
   .skill-html {
     border: 2px solid var(--color-primary-light);
@@ -163,7 +166,6 @@ section#hero-third {
 }
 
 section#hero-four {
-  width: var(--tablet-width);
   background-color: var(--color-primary-light);
   border-radius: var(--border-radius-md);
   margin: 4rem 0 0 0;
@@ -190,3 +192,32 @@ section#hero-four {
     }
   }
 }
+
+@media screen and (width <= 1000px) {
+  main section#hero-landing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main section#hero-third {
+    width: 60%;
+  }
+}
+
+@media screen and (width <= 800px) {
+ 
+  main section {
+    width: 100%;
+  }
+  main section#hero-third {
+      width: inherit;
+  }
+
+}
+/* @media screen and (width <= 800px) {
+ 
+  main section {
+    width: 600px;
+  }
+
+} */
